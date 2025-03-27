@@ -48,6 +48,9 @@ importers:
         specifier: ^2.0.3
         version: 2.0.4
     devDependencies:
+      koa2-cors:
+        specifier: 2.0.6
+        version: 2.0.6
       nodemon:
         specifier: ^1.19.1
         version: 1.19.4
@@ -3517,6 +3520,10 @@ packages:
   koa-views@6.3.1:
     resolution: {integrity: sha512-weIaPs2cCHWT2qK8qHRmwlZ29xRCvUVy1v/z12AGavVV5j4QIU0W/Y7OVBBu1sTkcO9dDJ25ajGYHGZ/aY43IQ==, tarball: https://registry.npmjs.org/koa-views/-/koa-views-6.3.1.tgz}
     deprecated: This package is deprecated, please use the new fork @ladjs/koa-views. Maintenance is supported by Forward Email at https://forwardemail.net ; follow/watch https://github.com/ladjs/koa-views for updates and release changelog
+
+  koa2-cors@2.0.6:
+    resolution: {integrity: sha512-JRCcSM4lamM+8kvKGDKlesYk2ASrmSTczDtGUnIadqMgnHU4Ct5Gw7Bxt3w3m6d6dy3WN0PU4oMP43HbddDEWg==, tarball: https://registry.npmjs.org/koa2-cors/-/koa2-cors-2.0.6.tgz}
+    engines: {node: '>= 7.6.0'}
 
   koa@2.16.0:
     resolution: {integrity: sha512-Afhqq0Vq3W7C+/rW6IqHVBDLzqObwZ07JaUNUEF8yCQ6afiyFE3RAy+i7V0E46XOWlH7vPWn/x0vsZwNy6PWxw==, tarball: https://registry.npmjs.org/koa/-/koa-2.16.0.tgz}
@@ -9766,6 +9773,8 @@ snapshots:
       - velocityjs
       - walrus
       - whiskers
+
+  koa2-cors@2.0.6: {}
 
   koa@2.16.0:
     dependencies:
