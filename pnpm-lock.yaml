@@ -83,6 +83,76 @@ importers:
         specifier: ^3.9.0
         version: 3.11.3(webpack-cli@3.3.12)(webpack@4.47.0)
 
+  ise-microapp-react16:
+    dependencies:
+      react:
+        specifier: 16.14.0
+        version: 16.14.0
+      react-dom:
+        specifier: 16.14.0
+        version: 16.14.0(react@16.14.0)
+      react-router-dom:
+        specifier: 5.3.4
+        version: 5.3.4(react@16.14.0)
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.7.2
+        version: 7.26.10
+      '@babel/plugin-transform-react-jsx':
+        specifier: ^7.7.0
+        version: 7.25.9(@babel/core@7.26.10)
+      '@babel/preset-env':
+        specifier: ^7.7.1
+        version: 7.26.9(@babel/core@7.26.10)
+      '@babel/preset-react':
+        specifier: ^7.10.4
+        version: 7.26.3(@babel/core@7.26.10)
+      axios:
+        specifier: ^0.21.1
+        version: 0.21.4
+      babel-loader:
+        specifier: ^8.0.6
+        version: 8.4.1(@babel/core@7.26.10)(webpack@4.47.0)
+      cross-env:
+        specifier: ^6.0.3
+        version: 6.0.3
+      css-loader:
+        specifier: ^3.2.0
+        version: 3.6.0(webpack@4.47.0)
+      html-webpack-plugin:
+        specifier: ^3.2.0
+        version: 3.2.0(webpack@4.47.0)
+      mini-css-extract-plugin:
+        specifier: ^0.8.0
+        version: 0.8.2(webpack@4.47.0)
+      react-redux:
+        specifier: ^7.2.4
+        version: 7.2.9(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
+      react-router:
+        specifier: ^3.2.0
+        version: 3.2.6(react@16.14.0)
+      sass:
+        specifier: ^1.32.7
+        version: 1.86.0
+      sass-loader:
+        specifier: 10.5.2
+        version: 10.5.2(node-sass@5.0.0)(sass@1.86.0)(webpack@4.47.0)
+      style-loader:
+        specifier: ^1.0.0
+        version: 1.3.0(webpack@4.47.0)
+      url-loader:
+        specifier: ^4.1.1
+        version: 4.1.1(webpack@4.47.0)
+      webpack:
+        specifier: ^4.41.2
+        version: 4.47.0(webpack-cli@3.3.12)
+      webpack-cli:
+        specifier: ^3.3.10
+        version: 3.3.12(webpack@4.47.0)
+      webpack-dev-server:
+        specifier: ^3.9.0
+        version: 3.11.3(webpack-cli@3.3.12)(webpack@4.47.0)
+
   ise-microapp-service:
     dependencies:
       debug:
@@ -114,7 +184,7 @@ importers:
         version: 5.0.0
       koa-views:
         specifier: ^6.2.0
-        version: 6.3.1(lodash@4.17.21)(pug@2.0.4)
+        version: 6.3.1(lodash@4.17.21)(pug@2.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       pug:
         specifier: ^2.0.3
         version: 2.0.4
@@ -152,22 +222,22 @@ importers:
         version: 7.27.0(@babel/core@7.26.10)(eslint@7.32.0)
       '@vue/cli-plugin-babel':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@2.7.16)
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@2.7.16)
       '@vue/cli-plugin-eslint':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)
       '@vue/cli-plugin-router':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)
       '@vue/cli-plugin-vuex':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))
       '@vue/cli-service':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
+        version: 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
       '@vue/eslint-config-standard':
         specifier: ^6.1.0
-        version: 6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)
+        version: 6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
@@ -219,22 +289,22 @@ importers:
         version: 7.27.0(@babel/core@7.26.10)(eslint@7.32.0)
       '@vue/cli-plugin-babel':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@3.5.13)
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@3.5.13)
       '@vue/cli-plugin-eslint':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)
       '@vue/cli-plugin-router':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)
       '@vue/cli-plugin-vuex':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))
+        version: 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))
       '@vue/cli-service':
         specifier: ~5.0.0
-        version: 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
+        version: 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
       '@vue/eslint-config-standard':
         specifier: ^6.1.0
-        version: 6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)
+        version: 6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
@@ -3575,6 +3645,9 @@ packages:
   history@3.3.0:
     resolution: {integrity: sha512-ABLnJwKEZGXGqWsXaKYD8NNle49ZbKs1WEBlxrFsQ8dIudZpO5NJaH8WJOqh5lXVhAq7bHksfirrobBmrT7qBw==, tarball: https://registry.npmjs.org/history/-/history-3.3.0.tgz}
 
+  history@4.10.1:
+    resolution: {integrity: sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==, tarball: https://registry.npmjs.org/history/-/history-4.10.1.tgz}
+
   hmac-drbg@1.0.1:
     resolution: {integrity: sha512-Tti3gMqLdZfhOQY1Mzf/AanLiqh1WTiJgEj26ZuYQ9fbkLomzGchCws4FyrSd4VkpBfiNhaE1On+lOz894jvXg==, tarball: https://registry.npmjs.org/hmac-drbg/-/hmac-drbg-1.0.1.tgz}
 
@@ -5497,6 +5570,11 @@ packages:
     peerDependencies:
       react: ^15.6.2
 
+  react-dom@16.14.0:
+    resolution: {integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==, tarball: https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz}
+    peerDependencies:
+      react: ^16.14.0
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, tarball: https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz}
 
@@ -5515,13 +5593,27 @@ packages:
       react-native:
         optional: true
 
+  react-router-dom@5.3.4:
+    resolution: {integrity: sha512-m4EqFMHv/Ih4kpcBCONHbkT68KoAeHN4p3lAGoNryfHi0dMy0kCzEZakiKRsvg5wHZ/JLrLW8o8KomWiz/qbYQ==, tarball: https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.3.4.tgz}
+    peerDependencies:
+      react: '>=15'
+
   react-router@3.2.6:
     resolution: {integrity: sha512-nlxtQE8B22hb/JxdaslI1tfZacxFU8x8BJryXOnR2RxB4vc01zuHYAHAIgmBkdk1kzXaA25hZxK6KAH/+CXArw==, tarball: https://registry.npmjs.org/react-router/-/react-router-3.2.6.tgz}
     peerDependencies:
       react: ^0.14.0 || ^15.0.0 || ^16.0.0
 
+  react-router@5.3.4:
+    resolution: {integrity: sha512-Ys9K+ppnJah3QuaRiLxk+jDWOR1MekYQrlytiXxC1RyfbdsZkS5pvKAzCCr031xHixZwpnsYNT5xysdFHQaYsA==, tarball: https://registry.npmjs.org/react-router/-/react-router-5.3.4.tgz}
+    peerDependencies:
+      react: '>=15'
+
   react@15.6.2:
     resolution: {integrity: sha512-DHyivomgg2kMUWsT3mfMtIKNxJyAtlcFtCd+vWvk4u/mAsnXqrhkDVAzZR7aSS/kk2hvAS7rwlia6zyAcJjcsg==, tarball: https://registry.npmjs.org/react/-/react-15.6.2.tgz}
+    engines: {node: '>=0.10.0'}
+
+  react@16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==, tarball: https://registry.npmjs.org/react/-/react-16.14.0.tgz}
     engines: {node: '>=0.10.0'}
 
   read-pkg-up@1.0.1:
@@ -5680,6 +5772,9 @@ packages:
     resolution: {integrity: sha512-i1xevIst/Qa+nA9olDxLWnLk8YZbi8R/7JPbCMcgyWaFR6bKWaexgJgEB5oc2PKMjYdrHynyz0NY+if+H98t1w==, tarball: https://registry.npmjs.org/resolve-path/-/resolve-path-1.4.0.tgz}
     engines: {node: '>= 0.8'}
 
+  resolve-pathname@3.0.0:
+    resolution: {integrity: sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==, tarball: https://registry.npmjs.org/resolve-pathname/-/resolve-pathname-3.0.0.tgz}
+
   resolve-url@0.2.1:
     resolution: {integrity: sha512-ZuF55hVUQaaczgOIwqWzkEcEidmlD/xl44x1UZnhOXcYuFN2S6+rcxpG+C1N3So0wvNI3DmJICUFfu2SxhBmvg==, tarball: https://registry.npmjs.org/resolve-url/-/resolve-url-0.2.1.tgz}
     deprecated: https://github.com/lydell/resolve-url#deprecated
@@ -5813,6 +5908,9 @@ packages:
     resolution: {integrity: sha512-zV8vGUld/+mP4KbMLJMX7TyGCuUp7hnkOScgCMsWuHtns8CWBoz+vmEhoGMXsaJrbUP8gj+F1dLvVe79sK8UdA==, tarball: https://registry.npmjs.org/sass/-/sass-1.86.0.tgz}
     engines: {node: '>=14.0.0'}
     hasBin: true
+
+  scheduler@0.19.1:
+    resolution: {integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==, tarball: https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz}
 
   schema-utils@1.0.0:
     resolution: {integrity: sha512-i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==, tarball: https://registry.npmjs.org/schema-utils/-/schema-utils-1.0.0.tgz}
@@ -6344,6 +6442,12 @@ packages:
     resolution: {integrity: sha512-9phl76Cqm6FhSX9Xe1ZUAMLtm1BLkKj2Qd5ApyWkXzsMRaA7dgr81kf4wJmQf/hAvg8EEyJxDo3du/0KlhPiKQ==, tarball: https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz}
     engines: {node: '>=0.6.0'}
 
+  tiny-invariant@1.3.3:
+    resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==, tarball: https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.3.3.tgz}
+
+  tiny-warning@1.0.3:
+    resolution: {integrity: sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==, tarball: https://registry.npmjs.org/tiny-warning/-/tiny-warning-1.0.3.tgz}
+
   to-arraybuffer@1.0.1:
     resolution: {integrity: sha512-okFlQcoGTi4LQBG/PgSYblw9VOyptsz2KJZqc6qtgGdes8VktzUQkj4BI2blit072iS8VODNcMA+tvnS9dnuMA==, tarball: https://registry.npmjs.org/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz}
 
@@ -6619,6 +6723,9 @@ packages:
 
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==, tarball: https://registry.npmjs.org/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz}
+
+  value-equal@1.0.1:
+    resolution: {integrity: sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==, tarball: https://registry.npmjs.org/value-equal/-/value-equal-1.0.1.tgz}
 
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==, tarball: https://registry.npmjs.org/vary/-/vary-1.1.2.tgz}
@@ -8263,11 +8370,11 @@ snapshots:
 
   '@vue/cli-overlay@5.0.8': {}
 
-  '@vue/cli-plugin-babel@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@2.7.16)':
+  '@vue/cli-plugin-babel@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@2.7.16)':
     dependencies:
       '@babel/core': 7.26.10
       '@vue/babel-preset-app': 5.0.8(@babel/core@7.26.10)(core-js@3.41.0)(vue@2.7.16)
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
       babel-loader: 8.4.1(@babel/core@7.26.10)(webpack@5.98.0)
       thread-loader: 3.0.4(webpack@5.98.0)
@@ -8282,11 +8389,11 @@ snapshots:
       - vue
       - webpack-cli
 
-  '@vue/cli-plugin-babel@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@3.5.13)':
+  '@vue/cli-plugin-babel@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(core-js@3.41.0)(encoding@0.1.13)(vue@3.5.13)':
     dependencies:
       '@babel/core': 7.26.10
       '@vue/babel-preset-app': 5.0.8(@babel/core@7.26.10)(core-js@3.41.0)(vue@3.5.13)
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
       babel-loader: 8.4.1(@babel/core@7.26.10)(webpack@5.98.0)
       thread-loader: 3.0.4(webpack@5.98.0)
@@ -8301,9 +8408,9 @@ snapshots:
       - vue
       - webpack-cli
 
-  '@vue/cli-plugin-eslint@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)':
+  '@vue/cli-plugin-eslint@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)':
     dependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
       eslint: 7.32.0
       eslint-webpack-plugin: 3.2.0(eslint@7.32.0)(webpack@5.98.0)
@@ -8317,9 +8424,9 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@vue/cli-plugin-eslint@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)':
+  '@vue/cli-plugin-eslint@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)(eslint@7.32.0)':
     dependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
       eslint: 7.32.0
       eslint-webpack-plugin: 3.2.0(eslint@7.32.0)(webpack@5.98.0)
@@ -8333,40 +8440,40 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@vue/cli-plugin-router@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)':
+  '@vue/cli-plugin-router@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)':
     dependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
 
-  '@vue/cli-plugin-router@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)':
+  '@vue/cli-plugin-router@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)':
     dependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
 
-  '@vue/cli-plugin-vuex@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))':
+  '@vue/cli-plugin-vuex@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))':
     dependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
 
-  '@vue/cli-plugin-vuex@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))':
+  '@vue/cli-plugin-vuex@5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))':
     dependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
 
-  '@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)':
+  '@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)':
     dependencies:
       '@babel/helper-compilation-targets': 7.27.0
       '@soda/friendly-errors-webpack-plugin': 1.8.1(webpack@5.98.0)
       '@soda/get-current-script': 1.0.2
       '@types/minimist': 1.2.5
       '@vue/cli-overlay': 5.0.8
-      '@vue/cli-plugin-router': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)
-      '@vue/cli-plugin-vuex': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))
+      '@vue/cli-plugin-router': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(encoding@0.1.13)
+      '@vue/cli-plugin-vuex': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
-      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)
-      '@vue/vue-loader-v15': vue-loader@15.11.1(@vue/compiler-sfc@3.5.13)(css-loader@6.11.0(webpack@5.98.0))(lodash@4.17.21)(vue-template-compiler@2.7.16)(webpack@5.98.0)
+      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
+      '@vue/vue-loader-v15': vue-loader@15.11.1(@vue/compiler-sfc@3.5.13)(css-loader@6.11.0(webpack@5.98.0))(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(vue-template-compiler@2.7.16)(webpack@5.98.0)
       '@vue/web-component-wrapper': 1.3.0
       acorn: 8.14.1
       acorn-walk: 8.3.4
@@ -8486,18 +8593,18 @@ snapshots:
       - webpack-cli
       - whiskers
 
-  '@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)':
+  '@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)':
     dependencies:
       '@babel/helper-compilation-targets': 7.27.0
       '@soda/friendly-errors-webpack-plugin': 1.8.1(webpack@5.98.0)
       '@soda/get-current-script': 1.0.2
       '@types/minimist': 1.2.5
       '@vue/cli-overlay': 5.0.8
-      '@vue/cli-plugin-router': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)
-      '@vue/cli-plugin-vuex': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))
+      '@vue/cli-plugin-router': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(encoding@0.1.13)
+      '@vue/cli-plugin-vuex': 5.0.8(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))
       '@vue/cli-shared-utils': 5.0.8(encoding@0.1.13)
-      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)
-      '@vue/vue-loader-v15': vue-loader@15.11.1(@vue/compiler-sfc@3.5.13)(css-loader@6.11.0(webpack@5.98.0))(lodash@4.17.21)(vue-template-compiler@2.7.16)(webpack@5.98.0)
+      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
+      '@vue/vue-loader-v15': vue-loader@15.11.1(@vue/compiler-sfc@3.5.13)(css-loader@6.11.0(webpack@5.98.0))(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(vue-template-compiler@2.7.16)(webpack@5.98.0)
       '@vue/web-component-wrapper': 1.3.0
       acorn: 8.14.1
       acorn-walk: 8.3.4
@@ -8672,9 +8779,9 @@ snapshots:
       '@vue/compiler-dom': 3.5.13
       '@vue/shared': 3.5.13
 
-  '@vue/component-compiler-utils@3.3.0(lodash@4.17.21)':
+  '@vue/component-compiler-utils@3.3.0(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)':
     dependencies:
-      consolidate: 0.15.1(lodash@4.17.21)(pug@2.0.4)
+      consolidate: 0.15.1(lodash@4.17.21)(pug@2.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       hash-sum: 1.0.2
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
@@ -8741,7 +8848,7 @@ snapshots:
 
   '@vue/devtools-api@6.6.4': {}
 
-  '@vue/eslint-config-standard@6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)':
+  '@vue/eslint-config-standard@6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)':
     dependencies:
       eslint: 7.32.0
       eslint-config-standard: 16.0.3(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint@7.32.0)
@@ -8752,12 +8859,12 @@ snapshots:
       eslint-plugin-promise: 5.2.0(eslint@7.32.0)
       eslint-plugin-vue: 8.7.1(eslint@7.32.0)
     optionalDependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
     transitivePeerDependencies:
       - supports-color
       - webpack
 
-  '@vue/eslint-config-standard@6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)':
+  '@vue/eslint-config-standard@6.1.0(@vue/cli-service@5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3))(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint-plugin-vue@8.7.1(eslint@7.32.0))(eslint@7.32.0)(webpack@5.98.0)':
     dependencies:
       eslint: 7.32.0
       eslint-config-standard: 16.0.3(eslint-plugin-import@2.31.0(eslint@7.32.0))(eslint-plugin-node@11.1.0(eslint@7.32.0))(eslint-plugin-promise@5.2.0(eslint@7.32.0))(eslint@7.32.0)
@@ -8768,7 +8875,7 @@ snapshots:
       eslint-plugin-promise: 5.2.0(eslint@7.32.0)
       eslint-plugin-vue: 8.7.1(eslint@7.32.0)
     optionalDependencies:
-      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
+      '@vue/cli-service': 5.0.8(@vue/compiler-sfc@3.5.13)(encoding@0.1.13)(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(sass-loader@12.6.0(node-sass@5.0.0)(sass@1.86.0)(webpack@5.98.0))(vue-template-compiler@2.7.16)(vue@3.5.13)(webpack-sources@3.2.3)
     transitivePeerDependencies:
       - supports-color
       - webpack
@@ -10003,12 +10110,14 @@ snapshots:
   console-control-strings@1.1.0:
     optional: true
 
-  consolidate@0.15.1(lodash@4.17.21)(pug@2.0.4):
+  consolidate@0.15.1(lodash@4.17.21)(pug@2.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0):
     dependencies:
       bluebird: 3.7.2
     optionalDependencies:
       lodash: 4.17.21
       pug: 2.0.4
+      react: 16.14.0
+      react-dom: 16.14.0(react@16.14.0)
 
   constantinople@3.1.2:
     dependencies:
@@ -11650,6 +11759,15 @@ snapshots:
       query-string: 4.3.4
       warning: 3.0.0
 
+  history@4.10.1:
+    dependencies:
+      '@babel/runtime': 7.27.0
+      loose-envify: 1.4.0
+      resolve-pathname: 3.0.0
+      tiny-invariant: 1.3.3
+      tiny-warning: 1.0.3
+      value-equal: 1.0.1
+
   hmac-drbg@1.0.1:
     dependencies:
       hash.js: 1.1.7
@@ -12356,9 +12474,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  koa-views@6.3.1(lodash@4.17.21)(pug@2.0.4):
+  koa-views@6.3.1(lodash@4.17.21)(pug@2.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0):
     dependencies:
-      consolidate: 0.15.1(lodash@4.17.21)(pug@2.0.4)
+      consolidate: 0.15.1(lodash@4.17.21)(pug@2.0.4)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       debug: 4.4.0(supports-color@8.1.1)
       get-paths: 0.0.7
       koa-send: 5.0.1
@@ -13883,6 +14001,14 @@ snapshots:
       prop-types: 15.8.1
       react: 15.6.2
 
+  react-dom@16.14.0(react@16.14.0):
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 16.14.0
+      scheduler: 0.19.1
+
   react-is@16.13.1: {}
 
   react-is@17.0.2: {}
@@ -13899,6 +14025,29 @@ snapshots:
     optionalDependencies:
       react-dom: 15.6.2(react@15.6.2)
 
+  react-redux@7.2.9(react-dom@16.14.0(react@16.14.0))(react@16.14.0):
+    dependencies:
+      '@babel/runtime': 7.27.0
+      '@types/react-redux': 7.1.34
+      hoist-non-react-statics: 3.3.2
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 16.14.0
+      react-is: 17.0.2
+    optionalDependencies:
+      react-dom: 16.14.0(react@16.14.0)
+
+  react-router-dom@5.3.4(react@16.14.0):
+    dependencies:
+      '@babel/runtime': 7.27.0
+      history: 4.10.1
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 16.14.0
+      react-router: 5.3.4(react@16.14.0)
+      tiny-invariant: 1.3.3
+      tiny-warning: 1.0.3
+
   react-router@3.2.6(react@15.6.2):
     dependencies:
       create-react-class: 15.7.0
@@ -13911,10 +14060,41 @@ snapshots:
       react-is: 16.13.1
       warning: 3.0.0
 
+  react-router@3.2.6(react@16.14.0):
+    dependencies:
+      create-react-class: 15.7.0
+      history: 3.3.0
+      hoist-non-react-statics: 3.3.2
+      invariant: 2.2.4
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 16.14.0
+      react-is: 16.13.1
+      warning: 3.0.0
+
+  react-router@5.3.4(react@16.14.0):
+    dependencies:
+      '@babel/runtime': 7.27.0
+      history: 4.10.1
+      hoist-non-react-statics: 3.3.2
+      loose-envify: 1.4.0
+      path-to-regexp: 1.9.0
+      prop-types: 15.8.1
+      react: 16.14.0
+      react-is: 16.13.1
+      tiny-invariant: 1.3.3
+      tiny-warning: 1.0.3
+
   react@15.6.2:
     dependencies:
       create-react-class: 15.7.0
       fbjs: 0.8.18
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+
+  react@16.14.0:
+    dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.8.1
@@ -14146,6 +14326,8 @@ snapshots:
       http-errors: 1.6.3
       path-is-absolute: 1.0.1
 
+  resolve-pathname@3.0.0: {}
+
   resolve-url@0.2.1: {}
 
   resolve@1.22.10:
@@ -14274,6 +14456,11 @@ snapshots:
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.1
+
+  scheduler@0.19.1:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
 
   schema-utils@1.0.0:
     dependencies:
@@ -15008,6 +15195,10 @@ snapshots:
     dependencies:
       setimmediate: 1.0.5
 
+  tiny-invariant@1.3.3: {}
+
+  tiny-warning@1.0.3: {}
+
   to-arraybuffer@1.0.1: {}
 
   to-fast-properties@1.0.3: {}
@@ -15284,6 +15475,8 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
+  value-equal@1.0.1: {}
+
   vary@1.1.2: {}
 
   verror@1.10.0:
@@ -15312,9 +15505,9 @@ snapshots:
 
   vue-hot-reload-api@2.3.4: {}
 
-  vue-loader@15.11.1(@vue/compiler-sfc@3.5.13)(css-loader@6.11.0(webpack@5.98.0))(lodash@4.17.21)(vue-template-compiler@2.7.16)(webpack@5.98.0):
+  vue-loader@15.11.1(@vue/compiler-sfc@3.5.13)(css-loader@6.11.0(webpack@5.98.0))(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)(vue-template-compiler@2.7.16)(webpack@5.98.0):
     dependencies:
-      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)
+      '@vue/component-compiler-utils': 3.3.0(lodash@4.17.21)(react-dom@16.14.0(react@16.14.0))(react@16.14.0)
       css-loader: 6.11.0(webpack@5.98.0)
       hash-sum: 1.0.2
       loader-utils: 1.4.2

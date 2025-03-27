@@ -1,5 +1,5 @@
 {
-  "name": "ise-microapp-react15",
+  "name": "ise-microapp-react16",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,9 @@
     "serve": "cross-env NODE_ENV=development webpack-dev-server --mode production"
   },
   "dependencies": {
-    "react": "15.6.2",
-    "react-dom": "15.6.2"
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-router-dom": "5.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",

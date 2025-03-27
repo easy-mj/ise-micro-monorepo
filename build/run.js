@@ -5,6 +5,7 @@ const filePath = {
   'ise-microapp-vue2': path.join(__dirname, '../ise-microapp-vue2'),
   'ise-microapp-vue3': path.join(__dirname, '../ise-microapp-vue3'),
   'ise-microapp-react15': path.join(__dirname, '../ise-microapp-react15'),
+  'ise-microapp-react16': path.join(__dirname, '../ise-microapp-react16'),
   'ise-microapp-service': path.join(__dirname, '../ise-microapp-service')
 }
 
