@@ -5,8 +5,37 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App)
-}).$mount('#app')
+let instance = null
+const render = () => {
+  instance = new Vue({
+    router,
+    store,
+    render: (h) => h(App)
+  }).$mount('#app')
+}
+
+// 判断当前是否是微前端环境中运行
+if (!window.__ISE_MICRO_WEB__) {
+  render()
+}
+
+/**
+ * 暴露三个生命周期方法，供微前端框架使用
+ * 此时，如果在控制台打印输出 window['ise-microapp-vue2'] 是可以查看到这三个生命周期方法
+ */
+
+// 开始加载
+export const bootstrap = () => {
+  console.log('开始加载')
+}
+
+// 渲染成功
+export const mount = () => {
+  render()
+  console.log('渲染成功')
+}
+
+// 卸载
+export const unmount = () => {
+  console.log('卸载', instance)
+}
