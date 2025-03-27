@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import EnergyView from '../views/energy/EnergyView'
+import EnergyView from '../views/energy'
 
 Vue.use(VueRouter)
 
