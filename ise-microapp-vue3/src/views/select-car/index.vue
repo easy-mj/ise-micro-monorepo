@@ -1,7 +1,34 @@
 <template>
-  <div>选车</div>
+  <div class="select-container">
+    <div class="select-content">
+      <LeftNav />
+      <selectDetail />
+    </div>
+  </div>
 </template>
 
-<script setup></script>
+<script>
+import LeftNav from './components/leftNav'
+import selectDetail from './components/selectDetail'
 
-<style lang="scss" scoped></style>
+export default {
+  name: 'SelectCarIndex',
+  components: {
+    LeftNav,
+    selectDetail
+  }
+}
+</script>
+
+<style lang="scss">
+.select {
+  &-container {
+    margin-top: 50px;
+  }
+  &-content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+</style>
