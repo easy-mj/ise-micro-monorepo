@@ -1,0 +1,1 @@
+export { registerMicroApp } from './start'

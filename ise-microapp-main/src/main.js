@@ -2,4 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from '@/router'
 
-createApp(App).use(router).mount('#app')
+// 注册子应用
+import { subNavList } from '@/store/sub'
+import { registerApp } from '@/utils'
+registerApp(subNavList)
+
+createApp(App).use(router()).mount('#app')
