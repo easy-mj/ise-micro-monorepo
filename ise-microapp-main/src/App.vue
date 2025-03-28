@@ -7,7 +7,9 @@
     <!-- loading -->
     <loading v-if="isLoading"></loading>
     <!-- 子应用内容 -->
-    <div v-if="!isLoading" class="sub-body">子应用内容</div>
+    <div v-if="!isLoading" id="micro-subapp-container" class="sub-body">
+      子应用内容
+    </div>
   </div>
   <!-- 底部 -->
   <main-footer></main-footer>

@@ -24,6 +24,9 @@ importers:
       core-js:
         specifier: ^3.8.3
         version: 3.41.0
+      ise-microapp-spa:
+        specifier: workspace:^
+        version: link:../ise-microapp-spa
       vue:
         specifier: ^3.2.13
         version: 3.5.13
@@ -262,6 +265,8 @@ importers:
       nodemon:
         specifier: ^1.19.1
         version: 1.19.4
+
+  ise-microapp-spa: {}
 
   ise-microapp-vue2:
     dependencies:
