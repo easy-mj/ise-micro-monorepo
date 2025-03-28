@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "cross-env NODE_ENV=development webpack-dev-server --mode production"
+    "serve": "cross-env NODE_ENV=development webpack-dev-server --mode production",
+    "clean": "rimraf node_modules"
   },
   "dependencies": {
     "react": "15.6.2",
