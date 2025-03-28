@@ -1,1 +1,1 @@
-export { registerMicroApp } from './start'
+export { registerMicroApp, start } from './start'
