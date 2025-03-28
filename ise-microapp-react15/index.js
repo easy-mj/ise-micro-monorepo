@@ -1,33 +1,36 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import BasicMap from './src/router/index.jsx';
-import "./index.scss"
+import BasicMap from './src/router/index.jsx'
+import './index.scss'
 import { setMain } from './src/utils/global'
 
 const render = () => {
-  ReactDOM.render((
-    <BasicMap />
-  ), document.getElementById('app-react'))
+  ReactDOM.render(<BasicMap />, document.getElementById('app-react'))
 }
 
-if (!window.__MICRO_WEB__) {
+// 判断当前是否是微前端环境中运行
+if (!window.__ISE_MICRO_WEB__) {
   render()
 }
 
-export async function bootstrap() {
-  console.log('react bootstrap')
+/**
+ * 暴露三个生命周期方法，供微前端框架使用
+ * 此时，如果在控制台打印输出 window['ise-microapp-react15'] 是可以查看到这三个生命周期方法
+ */
+
+// 开始加载
+export const bootstrap = () => {
+  console.log('开始加载')
 }
 
-export async function mount(app) {
-  setMain(app) // 记录主应用传过来的方法
-  console.log('react mount')
+// 渲染成功
+export const mount = () => {
   render()
+  console.log('渲染成功')
 }
 
-export async function unmount(ctx) {
-  console.log('react unmout')
-  const { container } = ctx
-  if (container) {
-    document.querySelector(container).innerHTML = ''
-  }
+// 卸载
+export const unmount = () => {
+  // ReactDOM.render 无法获取到实例，所以可以直接将根结点或者传入容器置为空即可
+  console.log('卸载')
 }

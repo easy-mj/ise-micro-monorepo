@@ -3,7 +3,7 @@ import { main } from '../../utils/global'
 import './index.scss'
 
 // 添加导航
-import InformationNav from '../information/components/tab/index.jsx';
+import InformationNav from '../information/components/tab/index.jsx'
 
 // 加载视频列表
 import VideoList from './components/list/index.jsx'
@@ -40,13 +40,13 @@ class InformationLast extends React.Component {
         {
           label: '分类六',
           value: 6
-        },
+        }
       ]
     }
   }
   componentDidMount() {
     // 设置面包屑内容
-    main.appInfo.crumbsState.setCrumbs(['首页', '选车', '丰田', '凯美瑞', '视频'])
+    // main.appInfo.crumbsState.setCrumbs(['首页', '选车', '丰田', '凯美瑞', '视频'])
   }
 
   render() {
@@ -54,11 +54,10 @@ class InformationLast extends React.Component {
     return (
       <div className="video-container">
         <div className="video-content">
-          <InformationNav navList={navList}/>
+          <InformationNav navList={navList} />
 
           <VideoList />
         </div>
-
       </div>
     )
   }
