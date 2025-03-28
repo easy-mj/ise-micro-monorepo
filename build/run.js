@@ -6,7 +6,8 @@ const filePath = {
   'ise-microapp-vue3': path.join(__dirname, '../ise-microapp-vue3'),
   'ise-microapp-react15': path.join(__dirname, '../ise-microapp-react15'),
   'ise-microapp-react16': path.join(__dirname, '../ise-microapp-react16'),
-  'ise-microapp-service': path.join(__dirname, '../ise-microapp-service')
+  'ise-microapp-service': path.join(__dirname, '../ise-microapp-service'),
+  'ise-microapp-main': path.join(__dirname, '../ise-microapp-main')
 }
 
 // cd 子应用的目录，使用 pnpm serve 启动项目

@@ -1,13 +1,11 @@
 {
-  "name": "ise-microapp-vue3",
+  "name": "ise-microapp-main",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.6.4",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "clean": "rimraf node_modules"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",

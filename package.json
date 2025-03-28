@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./build/run.js"
+    "start": "node ./build/run.js",
+    "clean": "pnpm -r run clean && rm -rf node_modules"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "axios": "^1.8.4"
   },
   "devDependencies": {
+    "rimraf": "^6.0.1",
     "sass": "^1.32.7"
   }
 }
