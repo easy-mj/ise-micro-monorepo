@@ -3,13 +3,13 @@ import { main } from '../../utils/global'
 import './index.scss'
 
 // 资讯文章
-import InformationLastArticle from './components/article/index.jsx';
+import InformationLastArticle from './components/article/index.jsx'
 
 // 热门推荐
-import InformationRecommend from '../information/components/recommended/index.jsx';
+import InformationRecommend from '../information/components/recommended/index.jsx'
 
 // 车辆信息
-import InformationLastCar from './components/car/index.jsx';
+import InformationLastCar from './components/car/index.jsx'
 
 class InformationLast extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class InformationLast extends React.Component {
   }
   componentDidMount() {
     // 设置面包屑内容
-    main.appInfo.crumbsState.setCrumbs(['首页', '选车', '丰田', '凯美瑞', '资讯最终页'])
+    // main.appInfo.crumbsState.setCrumbs(['首页', '选车', '丰田', '凯美瑞', '资讯最终页'])
   }
 
   render() {
