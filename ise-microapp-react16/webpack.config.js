@@ -8,7 +8,11 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'ise-microapp-react16.js',
+    library: 'ise-microapp-react16',
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
+    publicPath: 'http://localhost:8004'
   },
   module: {
     rules: [
@@ -56,7 +60,13 @@ module.exports = {
     })
   ],
   devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
     port: 8004,
-    hot: true
+    hot: true,
+    // 子应用本地允许跨域访问
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
   }
 }
