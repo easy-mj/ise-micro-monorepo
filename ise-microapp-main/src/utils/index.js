@@ -16,7 +16,7 @@ export const registerApp = (list) => {
         console.log('渲染完成')
       }
     ],
-    destroyed: [
+    destoryed: [
       () => {
         console.log('卸载完成')
       }

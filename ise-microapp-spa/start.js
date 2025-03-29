@@ -8,10 +8,6 @@ rewriteRouter()
 
 export const registerMicroApp = (appList, lifeCycle) => {
   setSubAppList(appList)
-  lifeCycle.beforeLoad[0]()
-  setTimeout(() => {
-    lifeCycle.mounted[0]()
-  }, 3000)
   setMainLifeCycle(lifeCycle)
 }
 
@@ -26,10 +22,10 @@ export const start = () => {
   // 查找到符合当前路由的子应用
   const app = currentApp()
   if (app) {
+    // 存储当前的子应用 activeRule
+    window.__ISE_CURRENT_SUB_APP__ = app.activeRule
     const { pathname, hash } = window.location
     const url = pathname + hash
     window.history.pushState('', '', url)
-    // 存储当前的子应用 activeRule
-    window.__ISE_CURRENT_SUB_APP__ = app.activeRule
   }
 }
