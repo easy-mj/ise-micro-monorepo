@@ -39,7 +39,7 @@ export const beforeLoad = async (app) => {
  * 微前端框架的生命周期函数 mounted
  */
 export const mounted = async (app) => {
-  app && app.mounted && app.mounted()
+  app && app.mount && app.mount()
 
   // 对应的执行主应用的生命周期
   await runMainLifeCycle('mounted')
@@ -49,7 +49,7 @@ export const mounted = async (app) => {
  * 微前端框架的生命周期函数 destoryed
  */
 export const destoryed = async (app) => {
-  app && app.destoryed && app.destoryed()
+  app && app.unmount && app.unmount()
   // 对应的执行主应用的生命周期
   await runMainLifeCycle('destoryed')
 }
