@@ -1,8 +1,10 @@
 import { isTurnSubApp } from '../utils'
+import { lifeCycle } from '../lifeCycle'
 
-export const turnApp = () => {
+export const turnApp = async () => {
   if (!isTurnSubApp()) {
     return
   }
-  console.log('路由切换了')
+  // 微前端的生命周期执行
+  await lifeCycle()
 }
