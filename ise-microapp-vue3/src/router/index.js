@@ -11,7 +11,7 @@ const routes = [
   },
   // 选车
   {
-    path: '/select-car',
+    path: '/select',
     name: 'SelectCar',
     component: SelectCar
   }

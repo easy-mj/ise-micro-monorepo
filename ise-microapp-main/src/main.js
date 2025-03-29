@@ -7,4 +7,4 @@ import { subNavList } from '@/store/sub'
 import { registerApp } from '@/utils'
 registerApp(subNavList)
 
-createApp(App).use(router()).mount('#app')
+createApp(App).use(router()).mount('#app-main')

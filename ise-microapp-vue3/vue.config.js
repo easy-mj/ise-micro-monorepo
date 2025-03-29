@@ -34,9 +34,7 @@ module.exports = {
       // 设置后可以在浏览器控制台通过 window['ise-microapp-vue3']获取到当前子应用打包后的所有内容
       library: 'ise-microapp-vue3',
       // 使 UMD 模块使用命名的 define
-      umdNamedDefine: true,
-      // 定义全局对象，确保在不同环境正常工作
-      globalObject: 'this'
+      umdNamedDefine: true
     }
   }
 }
