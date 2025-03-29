@@ -8,6 +8,10 @@ rewriteRouter()
 
 export const registerMicroApp = (appList, lifeCycle) => {
   setSubAppList(appList)
+  lifeCycle.beforeLoad[0]()
+  setTimeout(() => {
+    lifeCycle.mounted[0]()
+  }, 3000)
   setMainLifeCycle(lifeCycle)
 }
 

@@ -16,16 +16,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import MainHeader from '@/components/MainHeader'
 import MainNav from '@/components/MainNav'
 import MainFooter from '@/components/MainFooter'
 import Loading from '@/components/Loading'
+import { loadingStatus } from '@/store'
 
-const isLoading = ref(true)
-setTimeout(() => {
-  isLoading.value = false
-}, 3000)
+const isLoading = loadingStatus
 </script>
 
 <style lang="scss">
