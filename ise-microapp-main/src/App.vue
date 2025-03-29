@@ -5,9 +5,9 @@
   <main-nav></main-nav>
   <div class="sub-container">
     <!-- loading -->
-    <loading v-if="isLoading"></loading>
+    <loading v-show="isLoading"></loading>
     <!-- 子应用内容 -->
-    <div v-if="!isLoading" id="micro-subapp-container" class="sub-body">
+    <div v-show="!isLoading" id="micro-subapp-container" class="sub-body">
       子应用内容
     </div>
   </div>
