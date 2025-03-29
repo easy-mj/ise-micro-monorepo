@@ -9,24 +9,26 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+.micro-main-body-loading-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 .micro-main-body-loading {
   width: 112px;
-  height: 84px;
-  position: absolute;
+  height: 100%;
+  min-height: 100%;
+  // position: absolute;
   user-select: none;
 
   &-wrapper {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    margin-top: -90px;
   }
 
   img {

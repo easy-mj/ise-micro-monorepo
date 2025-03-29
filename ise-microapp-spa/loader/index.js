@@ -1,4 +1,5 @@
 import { fetchResource } from '../utils'
+import { performScriptForEval } from '../sandbox'
 
 // 加载 html 的方法
 export const loadHtml = async (app) => {
@@ -10,12 +11,18 @@ export const loadHtml = async (app) => {
 
   // 解析 html
   const [dom, scripts] = await parseHtml(entry)
-  console.log(scripts)
+
   const ct = document.querySelector(container)
+
   if (!ct) {
-    throw new Error('容器不存在，请查看')
+    // throw new Error('容器不存在，请查看')
+    return
   }
   ct.innerHTML = dom
+
+  scripts.forEach((script) => {
+    performScriptForEval(script)
+  })
 
   return app
 }
