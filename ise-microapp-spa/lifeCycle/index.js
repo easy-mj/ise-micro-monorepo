@@ -1,5 +1,6 @@
 import { findAppByRoute } from '../utils'
 import { getMainLifeCycle } from '../constants'
+import { loadHtml } from '../loader'
 
 export const lifeCycle = async () => {
   // 获取到上一个子应用
@@ -29,8 +30,9 @@ export const beforeLoad = async (app) => {
   app && app.beforeLoad && app.beforeLoad()
 
   // 新的app内容
-  const appContext = null
-  return appContext
+  const subApp = await loadHtml(app) // 获取的是子应用的内容
+  subApp && subApp.beforeLoad && subApp.beforeLoad() // 执行子应用的beforeLoad生命周期方法
+  return subApp
 }
 
 /**
