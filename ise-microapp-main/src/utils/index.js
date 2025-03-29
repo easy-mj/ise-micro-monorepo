@@ -7,18 +7,18 @@ export const registerApp = (list) => {
     beforeLoad: [
       () => {
         changeLoading(true)
-        console.log('开始加载')
+        console.log('ise-microapp-main 开始加载')
       }
     ],
     mounted: [
       () => {
         changeLoading(false)
-        console.log('渲染完成')
+        console.log('ise-microapp-main 渲染完成')
       }
     ],
     destoryed: [
       () => {
-        console.log('卸载完成')
+        console.log('ise-microapp-main 卸载完成')
       }
     ]
   })
