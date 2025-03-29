@@ -20,17 +20,16 @@ if (!window.__ISE_MICRO_WEB__) {
 
 // 开始加载
 export const bootstrap = () => {
-  console.log('开始加载')
+  console.log('ise-microapp-react16 执行 bootstrap 开始加载')
 }
 
 // 渲染成功
 export const mount = () => {
   render()
-  console.log('渲染成功')
+  console.log('ise-microapp-react16 执行 mount 渲染成功')
 }
 
 // 卸载
 export const unmount = () => {
-  // ReactDOM.render 无法获取到实例，所以可以直接将根结点或者传入容器置为空即可
-  console.log('卸载')
+  console.log('ise-microapp-react16 执行 unmount 卸载')
 }

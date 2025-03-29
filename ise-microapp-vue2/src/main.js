@@ -16,6 +16,7 @@ const render = () => {
 
 // 判断当前是否是微前端环境中运行
 if (!window.__ISE_MICRO_WEB__) {
+  console.log(1111111)
   render()
 }
 
@@ -26,16 +27,16 @@ if (!window.__ISE_MICRO_WEB__) {
 
 // 开始加载
 export const bootstrap = () => {
-  console.log('开始加载')
+  console.log('ise-microapp-vue2 执行 bootstrap 开始加载')
 }
 
 // 渲染成功
 export const mount = () => {
   render()
-  console.log('渲染成功')
+  console.log('ise-microapp-vue2 执行 mount 渲染成功')
 }
 
 // 卸载
 export const unmount = () => {
-  console.log('卸载', instance)
+  console.log('ise-microapp-vue2 执行 unmount 卸载')
 }
