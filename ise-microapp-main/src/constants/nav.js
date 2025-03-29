@@ -16,7 +16,7 @@ export const NAV_LIST = [
     name: '视频',
     status: false,
     value: 2,
-    url: '/ise-microapp-react15#/video',
+    url: '/ise-microapp-react15/#/video',
     hash: ''
   },
   {
@@ -44,7 +44,7 @@ export const NAV_LIST = [
     name: '排行',
     status: false,
     value: 6,
-    url: '/ise-microapp-react16#/rank',
+    url: '/ise-microapp-react16/#/rank',
     hash: ''
   }
 ]
