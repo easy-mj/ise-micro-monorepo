@@ -81,6 +81,20 @@ export const getResources = async (root, entry) => {
       }
     }
 
+    // link 也会有 js 的内容，如：<link rel="preload" href="http://localhost:8001/static/js/chunk-vendors.js" as="script">
+    if (element.nodeName.toLowerCase() === 'link') {
+      const href = element.getAttribute('href')
+
+      if (href.endsWith('.js')) {
+        if (href.startsWith('http')) {
+          scriptUrl.push(href)
+        } else {
+          // 这里就是子应用为什么需要设置publicPath的原因
+          scriptUrl.push(`http:${entry}/${href}`)
+        }
+      }
+    }
+
     // 处理子元素
     for (let i = 0; i < children.length; i++) {
       deepParse(children[i])

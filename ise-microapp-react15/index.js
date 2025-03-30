@@ -30,6 +30,10 @@ export const mount = () => {
 }
 
 // 卸载
-export const unmount = () => {
+export const unmount = (ctx) => {
   console.log('ise-microapp-react15 执行 unmount 卸载')
+  const { container } = ctx
+  if (container) {
+    document.querySelector(container).innerHTML = ''
+  }
 }
