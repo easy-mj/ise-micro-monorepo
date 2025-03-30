@@ -15,7 +15,7 @@ export const lifeCycle = async () => {
     await unmount(prevApp)
 
     // 销毁沙箱快照(高版本浏览器测试存在问题：react15子应用切换到vue3子应用，应用加载异常)
-    // prevApp.sandBox.inactive()
+    prevApp.sandBox.inactive()
   }
 
   const app = await boostrap(nextApp)

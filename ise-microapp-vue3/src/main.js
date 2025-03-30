@@ -26,6 +26,7 @@ export const bootstrap = () => {
 
 // 渲染成功
 export const mount = () => {
+  window.a = 1
   render()
   console.log('ise-microapp-vue3 执行 mount 渲染成功')
 }
