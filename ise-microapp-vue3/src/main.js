@@ -31,6 +31,11 @@ export const mount = () => {
 }
 
 // 卸载
-export const unmount = () => {
+export async function unmount(ctx) {
   console.log('ise-microapp-vue3 执行 unmount 卸载')
+  instance = null
+  const { container } = ctx
+  if (container) {
+    document.querySelector(container).innerHTML = ''
+  }
 }

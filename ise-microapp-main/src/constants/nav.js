@@ -3,7 +3,7 @@ export const NAV_LIST = [
     name: '首页',
     status: true,
     value: 0,
-    url: '/ise-microapp-vue3#/index',
+    url: '/ise-microapp-vue3/#/index',
     hash: ''
   },
   {
@@ -16,14 +16,14 @@ export const NAV_LIST = [
     name: '视频',
     status: false,
     value: 2,
-    url: '/ise-microapp-react15#/video',
+    url: '/ise-microapp-react15/#/video',
     hash: ''
   },
   {
     name: '选车',
     status: false,
     value: 3,
-    url: '/ise-microapp-vue3#/select',
+    url: '/ise-microapp-vue3/#/select',
     hash: ''
   },
   {
@@ -44,7 +44,7 @@ export const NAV_LIST = [
     name: '排行',
     status: false,
     value: 6,
-    url: '/ise-microapp-react16#/rank',
+    url: '/ise-microapp-react16/#/rank',
     hash: ''
   }
 ]
