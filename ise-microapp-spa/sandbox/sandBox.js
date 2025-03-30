@@ -1,5 +1,5 @@
 import { performScriptForEval } from './eval'
-import { SnapshotSandbox } from './snapshotSandbox'
+import { ProxySandbox } from './proxySandbox'
 
 // 检测生命周期函数
 const isCheckLifeCycle = (lifeCycle) => {
@@ -11,7 +11,7 @@ const isCheckLifeCycle = (lifeCycle) => {
 // 子应用生命周期处理，环境变量设置
 export const sandBox = (app, script) => {
   // 创建沙箱环境
-  const global = new SnapshotSandbox()
+  const global = new ProxySandbox()
 
   // 设置环境变量
   window.__ISE_MICRO_WEB__ = true
