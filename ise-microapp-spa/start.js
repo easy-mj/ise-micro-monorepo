@@ -2,13 +2,6 @@ import { setSubAppList, getSubAppList } from './constants'
 import { rewriteRouter } from './router'
 import { currentApp } from './utils'
 import { setMainLifeCycle } from './constants'
-import { IseCustomEvent } from './customEvent'
-
-const ice = new IseCustomEvent()
-ice.on('sendMsg', (data) => {
-  console.log(data)
-})
-window.ice = ice
 
 // 实现路由拦截
 rewriteRouter()
