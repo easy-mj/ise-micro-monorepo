@@ -1,7 +1,7 @@
 import React from 'react'
 import globalConfig from '../../../config/globalConfig'
 import Countdown from '../../../hooks/useCountdown'
-import { main } from '../../../utils/global'
+import { main } from '../../../utils/mainApp'
 import './LoginPanel.scss'
 import axios from 'axios'
 
