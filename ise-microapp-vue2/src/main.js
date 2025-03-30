@@ -32,6 +32,11 @@ export const bootstrap = () => {
 
 // 渲染成功
 export const mount = () => {
+  window.ice.on('test2', (data) => {
+    console.log(data)
+  })
+  window.ice.emit('test1', { a: 1 })
+
   render()
   console.log('ise-microapp-vue2 执行 mount 渲染成功')
 }

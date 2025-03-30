@@ -27,7 +27,14 @@ export const bootstrap = () => {
 // 渲染成功
 export const mount = () => {
   window.a = 1
-  window.ice.emit('sendMsg', { msg: '来自 ise-microapp-vue3 的自定义消息' })
+
+  // 先有监听，再有触发
+  window.ice.on('test1', (data) => {
+    console.log(data)
+
+    window.ice.emit('test2', { b: 2 })
+  })
+
   render()
   console.log('ise-microapp-vue3 执行 mount 渲染成功')
 }
