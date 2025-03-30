@@ -2,7 +2,7 @@ import React from 'react'
 import './index.scss'
 import ReactDOM from 'react-dom'
 import BasicMap from './src/router'
-import { setMain } from './src/utils/global'
+import { setMain } from './src/utils/mainApp'
 
 const render = () => {
   ReactDOM.render(<BasicMap />, document.getElementById('app-react'))
@@ -24,7 +24,9 @@ export const bootstrap = () => {
 }
 
 // 渲染成功
-export const mount = () => {
+export const mount = (app) => {
+  // 缓存主应用传递的数据
+  setMain(app)
   render()
   console.log('ise-microapp-react16 执行 mount 渲染成功')
 }

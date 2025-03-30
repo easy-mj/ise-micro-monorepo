@@ -40,7 +40,12 @@ export const boostrap = async (app) => {
  * 微前端框架的生命周期函数 mounted
  */
 export const mounted = async (app) => {
-  app && app.mount && app.mount()
+  app &&
+    app.mount &&
+    app.mount({
+      appInfo: app.appInfo,
+      entry: app.entry
+    })
 
   // 对应的执行主应用的生命周期
   await runMainLifeCycle('mounted', app)
