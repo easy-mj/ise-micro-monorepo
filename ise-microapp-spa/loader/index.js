@@ -1,5 +1,6 @@
 import { fetchResource } from '../utils'
 import { sandBox } from '../sandbox'
+import { cache } from '../cache'
 
 // 加载 html 的方法
 export const loadHtml = async (app) => {
@@ -10,7 +11,7 @@ export const loadHtml = async (app) => {
   let entry = app.entry
 
   // 解析 html
-  const [dom, scripts] = await parseHtml(entry)
+  const [dom, scripts] = await parseHtml(entry, app.name)
 
   const ct = document.querySelector(container)
 
@@ -28,7 +29,11 @@ export const loadHtml = async (app) => {
 }
 
 // 解析 html
-export const parseHtml = async (entry) => {
+export const parseHtml = async (entry, appName) => {
+  if (cache[appName]) {
+    // 命中缓存直接返回数据
+    return cache[appName]
+  }
   const html = await fetchResource(entry)
   let allScripts = []
 
@@ -44,6 +49,8 @@ export const parseHtml = async (entry) => {
   )
 
   allScripts = script.concat(fetchedScripts)
+  // 添加到缓存
+  cache[appName] = [dom, allScripts]
 
   return [dom, allScripts]
 }
