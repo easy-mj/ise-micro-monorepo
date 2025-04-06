@@ -28,6 +28,13 @@ export const bootstrap = () => {
 export const mount = () => {
   window.a = 1
 
+  // 修改 store
+  const storeData = window.ISE_STORE.getStore()
+  window.ISE_STORE.update({
+    ...storeData,
+    y: 2
+  })
+
   // 先有监听，再有触发
   window.ice.on('test1', (data) => {
     console.log(data)

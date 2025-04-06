@@ -1,6 +1,20 @@
-import { registerMicroApp, start } from 'ise-microapp-spa'
+import { registerMicroApp, start, createStore } from 'ise-microapp-spa'
 import { changeLoading } from '@/store'
 import { subNavList } from '@/store/sub'
+
+const store = createStore()
+// const storeData = store.getStore()
+
+window.ISE_STORE = store
+
+store.subscribe((newValue, oldValue) => {
+  console.log(newValue, oldValue)
+})
+
+// store.update({
+//   ...storeData,
+//   x: 1
+// })
 
 export const startMicroApp = () => {
   // 注册到微前端框架
