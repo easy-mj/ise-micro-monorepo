@@ -1,16 +1,32 @@
+import './public-path'
 import { createApp } from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
-import router from './router'
+import routes from './router'
 import store from './store'
 
+let router = null
 let instance = null
-const render = () => {
+let history = null
+
+function render(props = {}) {
+  const { container } = props
+  history = createWebHashHistory(
+    window.__POWERED_BY_QIANKUN__ ? '/ise-microapp-vue3' : '/'
+  )
+  router = createRouter({
+    history,
+    routes
+  })
+
   instance = createApp(App)
-  instance.use(store).use(router).mount('#app')
+  instance.use(router)
+  instance.use(store)
+  instance.mount(container ? container.querySelector('#app') : '#app')
 }
 
 // 判断当前是否是微前端环境中运行
-if (!window.__ISE_MICRO_WEB__) {
+if (!window.__POWERED_BY_QIANKUN__) {
   render()
 }
 
@@ -20,38 +36,29 @@ if (!window.__ISE_MICRO_WEB__) {
  */
 
 // 开始加载
-export const bootstrap = () => {
+export async function bootstrap() {
   console.log('ise-microapp-vue3 执行 bootstrap 开始加载')
 }
 
 // 渲染成功
-export const mount = () => {
-  window.a = 1
-
-  // 修改 store
-  const storeData = window.ISE_STORE.getStore()
-  window.ISE_STORE.update({
-    ...storeData,
-    y: 2
+export async function mount(props) {
+  props.onGlobalStateChange((state, prev) => {
+    // state: 变更后的状态; prev 变更前的状态
+    console.log(state, prev)
   })
+  setTimeout(() => {
+    props.setGlobalState({ x: 2, y: 2 })
+  }, 3000)
 
-  // 先有监听，再有触发
-  window.ice.on('test1', (data) => {
-    console.log(data)
-
-    window.ice.emit('test2', { b: 2 })
-  })
-
-  render()
+  render(props)
   console.log('ise-microapp-vue3 执行 mount 渲染成功')
 }
 
 // 卸载
 export async function unmount(ctx) {
   console.log('ise-microapp-vue3 执行 unmount 卸载')
+  instance.unmount()
+  instance._container.innerHTML = ''
   instance = null
-  const { container } = ctx
-  if (container) {
-    document.querySelector(container).innerHTML = ''
-  }
+  router = null
 }

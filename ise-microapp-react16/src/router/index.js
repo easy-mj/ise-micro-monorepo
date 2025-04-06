@@ -13,7 +13,9 @@ const BasicMap = () => {
 
   return (
     <context.Provider value={{ state, dispatch }}>
-      <HashRouter>
+      <HashRouter
+        basename={window.__POWERED_BY_QIANKUN__ ? '/ise-microapp-react16' : '/'}
+      >
         <Switch>
           {/* App页面 */}
           <Route path="/login" component={Login} />

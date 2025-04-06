@@ -1,8 +1,7 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
 import Index from '@/views/index'
 import SelectCar from '@/views/select-car'
 
-const routes = [
+export default [
   // 首页
   {
     path: '/index',
@@ -16,10 +15,3 @@ const routes = [
     component: SelectCar
   }
 ]
-
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
-
-export default router

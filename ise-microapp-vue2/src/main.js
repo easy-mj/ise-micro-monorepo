@@ -1,22 +1,31 @@
+import './public-path'
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
-import router from './router'
+import routes from './router'
 import store from './store'
 
 Vue.config.productionTip = false
 
+let router = null
 let instance = null
-const render = () => {
+
+function render(props = {}) {
+  const { container } = props
+  router = new VueRouter({
+    base: window.__POWERED_BY_QIANKUN__ ? '/ise-microapp-vue2' : '/',
+    routes
+  })
+
   instance = new Vue({
     router,
     store,
     render: (h) => h(App)
-  }).$mount('#app')
+  }).$mount(container ? container.querySelector('#app') : '#app')
 }
 
 // 判断当前是否是微前端环境中运行
-if (!window.__ISE_MICRO_WEB__) {
-  console.log(1111111)
+if (!window.__POWERED_BY_QIANKUN__) {
   render()
 }
 
@@ -26,27 +35,20 @@ if (!window.__ISE_MICRO_WEB__) {
  */
 
 // 开始加载
-export const bootstrap = () => {
+export async function bootstrap() {
   console.log('ise-microapp-vue2 执行 bootstrap 开始加载')
 }
 
 // 渲染成功
-export const mount = () => {
-  window.ice.on('test2', (data) => {
-    console.log(data)
-  })
-  window.ice.emit('test1', { a: 1 })
-
-  render()
+export async function mount(props) {
+  render(props)
   console.log('ise-microapp-vue2 执行 mount 渲染成功')
 }
 
 // 卸载
 export async function unmount(ctx) {
   console.log('ise-microapp-vue2 执行 unmount 卸载')
+  instance.$destroy()
+  instance.$el.innerHTML = ''
   instance = null
-  const { container } = ctx
-  if (container) {
-    document.querySelector(container).innerHTML = ''
-  }
 }
