@@ -2,6 +2,7 @@ import { setSubAppList, getSubAppList } from './constants'
 import { rewriteRouter } from './router'
 import { currentApp } from './utils'
 import { setMainLifeCycle } from './constants'
+import { prefetch } from './loader/prefetch'
 
 // 实现路由拦截
 rewriteRouter()
@@ -28,4 +29,7 @@ export const start = () => {
     // 存储当前的子应用 activeRule
     window.__ISE_CURRENT_SUB_APP__ = app.activeRule
   }
+
+  // 预加载子应用
+  prefetch()
 }
